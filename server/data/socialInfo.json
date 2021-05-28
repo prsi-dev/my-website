@@ -1,0 +1,22 @@
+{
+    "Rrss": [
+        {
+            "id": 1,
+            "iconUrl": "https://i.pinimg.com/originals/b7/63/69/b763699fd1fa3bfb374442593ae642e1.png",
+            "iconAlt": "Gitlab",
+            "iconLink": "url to link to page"
+        },
+        {
+            "id": 2,
+            "iconUrl": "https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png",
+            "iconAlt": "Twitter",
+            "iconLink": "url to link to page"
+        },
+        {
+            "id": 3,
+            "iconUrl": "https://image.flaticon.com/icons/png/512/87/87390.png",
+            "iconAlt": "Instagram",
+            "iconLink": "url to link to page"
+        }
+    ]
+}

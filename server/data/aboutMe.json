@@ -1,0 +1,13 @@
+{
+    "aboutMe": {
+        "id": 1,
+        "homeTitle": "Front-End Developer and Content Creator",
+        "homeDescription": "Hi , I´m Pedro Rodriguez, Front-End Developer & Photographer. Photograhpy is my long-time career but I always wanted to code professionally since I made my first blog 5 years ago. These days i´m diving deep into the web developing universe because during the lockdown in 2020 I started coding again, then i realized I needed some heavier training to start mastreing some code, and I did it with the lessons taken on UpgradeHub Bootcamp and its amazing tutors. I´m very happy to introduce you to my portfolio. I hope you enjoy! ☺️",
+        "homeAboutTitle": "A brief story about me",
+        "homeAboutDescription":"Photography has been my long term carrer so far , I started shooting when i was around 15 years old and since then the camera is the perfect tool to show my vision of the world that surrounds me. As the years went by I decided to do a carrer in photography, studied photography and graphic design at the school of Arts in Oviedo (Asturias, Spain)  and then specialized in product photography, I  always kept doing my personal artistic work for the rejoice that gives to me, so almost 5 years ago I built PRSI Photography as my first blog to show my work. In the 2020 lockdown I decided to jump again into the web developement universe again because it was something that I was whishing to do for a long time but i didn´t had the time to get into it. At that time I joined the Bootcamp at UpgradeHub in Madrid to strenght my skills and good practises as Front-End Developer. After upgrading my skills in Javascript, HTML and CSS  my goal is to work full time as a front-end web developer because I always loved to create , to build and to share, this website is my example of it. The Front-End has been developed on React.js and Back-End with Node.js, in the code there are examples of Components, Pages, Styles, Custom Hooks, a contact Form conected to the Nodemailer in the back-end, Services, API Calls and so on. Feel free to visit my GitLab repository to have a deeper look into the code. Thanks for reading!",
+        "homeAboutDescriptionImageUrl":"https://res.cloudinary.com/dz3vpgd0m/image/upload/v1621341913/portfolio/waves/waves_010_soanrb.jpg",
+        "name": "Pedro",
+        "surname": "Rodriguez",
+        "profileImageUrl": "https://res.cloudinary.com/dz3vpgd0m/image/upload/v1620046859/portfolio/profile/Profile_picture_tkul75.png"
+    }
+}
