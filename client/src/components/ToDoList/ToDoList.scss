@@ -1,0 +1,12 @@
+@import "../../styles/colours.scss";
+
+.ToDoList {
+  text-align: -webkit-center;
+  > button {
+    border-radius: 5px;
+    background: $light;
+    margin: 2rem;
+    width: 7rem;
+    align-self: center;
+  }
+}

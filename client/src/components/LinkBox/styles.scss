@@ -1,0 +1,142 @@
+@import "../../styles/reponsive/responsive.scss";
+@import "../../styles/colours.scss";
+@import "../../styles/animations/animations.scss";
+
+.LinkBox {
+  &__darkmode--button {
+    animation: fade 2s;
+    background: none;
+    border: none;
+  }
+  &__Dark {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 50vw;
+    height: 30vh;
+    background: $lightGrey;
+    flex-flow: column;
+    border-radius: 1rem;
+    color: $light;
+    &--link {
+      text-decoration: none;
+      color: $light;
+      margin-top: 1rem;
+    }
+  }
+  &__Light {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 50vw;
+    height: 30vh;
+    background: $darkGrey;
+    flex-flow: column;
+    border-radius: 1rem;
+    color: $light;
+    &--link {
+      text-decoration: none;
+      color: #f5f5f5;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@include tablet {
+  .LinkBox {
+    font-size: x-large;
+    width: 30vw;
+
+    &__Dark {
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem;
+      width: 40vw;
+      background: $darkGrey;
+      flex-flow: column;
+      border-radius: 1rem;
+      color: $light;
+      &--link {
+        text-decoration: none;
+        color: $light;
+        margin-top: 1rem;
+        font-size: x-large;
+      }
+    }
+    &__Light {
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem;
+      width: 40vw;
+      background: $lightGrey;
+      flex-flow: column;
+      border-radius: 1rem;
+      color: $light;
+      &--link {
+        text-decoration: none;
+        color: $dark;
+        margin-top: 1rem;
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .LinkBox {
+    &__Dark {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 10rem;
+      padding: 10%;
+      &--link {
+        margin-top: unset;
+        margin-inline: 8%;
+      }
+    }
+    &__Light {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 10rem;
+      padding: 10%;
+      &--link {
+        margin-top: unset;
+        margin-inline: 8%;
+      }
+    }
+  }
+}
+
+@include large {
+  .LinkBox {
+    &__darkmode--button {
+      height: 3rem;
+    }
+    &__Dark {
+      display: flex;
+      flex-direction: column;
+      height: 11rem;
+      width: 10rem;
+      padding: 10%;
+      &--link {
+        font-size: larger;
+        margin-top: unset;
+        margin-inline: 8%;
+      }
+    }
+    &__Light {
+      display: flex;
+      flex-direction: column;
+      height: 11rem;
+      width: 10rem;
+      padding: 10%;
+      &--link {
+        font-size: larger;
+        margin-top: unset;
+        margin-inline: 8%;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../styles/reponsive/responsive.scss";
+@import "../../styles/colours.scss";
+@import "../../styles/animations/animations.scss";
+
+.Navbar {
+  animation: moveRight 2s;
+
+  display: flex;
+  flex-flow: column-reverse;
+  bottom: 1rem;
+  right: 0.5rem;
+  position: fixed;
+  z-index: 4;
+  &__link {
+    text-decoration: none;
+    color: #282c34;
+    margin-top: 1rem;
+  }
+
+  &__dark--button {
+    align-self: flex-start;
+  }
+
+  &__menu--button {
+    animation: fade 2s;
+    animation: LinkBox 2s;
+
+    position: absolute;
+    right: 0.5rem;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    background-color: $darkTransparent;
+    color: $light;
+    border-radius: 100%;
+    padding: 0px;
+    &--image {
+      animation: LinkBox 2s;
+      height: 4rem;
+
+      display: block;
+    }
+  }
+}
+
+@include mobile-m {
+  .Navbar {
+    &__menu--button {
+      height: 4rem;
+      &--image {
+        height: 4rem;
+      }
+    }
+  }
+}
+
+@include mobile-s {
+  .Navbar {
+    &__menu--button {
+      height: 3rem;
+      &--image {
+        height: 3rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .Navbar {
+    display: flex;
+    flex-flow: column-reverse;
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+
+    &__menu--button {
+      height: 6rem;
+      width: 6rem;
+      &--image {
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+  }
+}
+
+/* @include desktop {
+  .Navbar {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    bottom: unset;
+    &__menu--button {
+      margin-bottom: unset;
+      top: 1rem;
+    }
+  }
+} */
+
+@include large {
+  .Navbar {
+    display: none;
+  }
+}

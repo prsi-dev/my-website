@@ -1,0 +1,18 @@
+@import "../../../styles/colours.scss";
+
+.TaskList {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  list-style-type: upper-roman;
+  border-radius: 1rem;
+  padding: 4rem;
+  background-color: $lightTransparent;
+  &__button {
+    border-radius: 5px;
+    background: $light;
+    margin: 2rem;
+    width: 7rem;
+    align-self: center;
+  }
+}

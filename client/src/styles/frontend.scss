@@ -1,0 +1,65 @@
+@import "../styles/colours.scss";
+@import "../styles/reponsive/responsive.scss";
+
+.FrontEnd {
+  > h2 {
+    left: 1rem;
+    position: absolute;
+    top: 0rem;
+  }
+
+  &__section {
+    margin: 4rem 0rem 0rem 0rem;
+    width: -webkit-fill-available;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $orange;
+    > p {
+      padding-inline: 3rem;
+    }
+  }
+  &__section--theTravelGuide {
+    width: 80%;
+    display: inline-block;
+    justify-content: center;
+  }
+}
+
+@include desktop {
+  .FrontEnd {
+    > h2 {
+      left: 1rem;
+      position: fixed;
+      top: 0rem;
+    }
+    &__section {
+      > p {
+        padding-inline: 15rem;
+      }
+    }
+  }
+}
+@include large {
+  .FrontEnd {
+    > h2 {
+      left: 1rem;
+      position: fixed;
+      top: 0rem;
+    }
+    &__section {
+      > p {
+        padding-inline: 15rem;
+      }
+    }
+  }
+}
+
+.Theme__Dark > main {
+  background-color: $dark;
+  color: $light;
+}
+.Theme__Light > main {
+  background-color: $light;
+  color: $dark;
+}

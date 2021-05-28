@@ -1,0 +1,36 @@
+@import "../../styles/colours.scss";
+
+.Gallery {
+  &__container {
+    > hr {
+      margin-top: 2rem;
+    }
+  }
+
+  &__btn--close--Dark {
+    display: flex;
+    text-decoration: none;
+    color: $light;
+    border-radius: 1px solid $light;
+    border: 1px solid $light;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 0rem 0rem 2rem;
+  }
+  &__btn--close--Light {
+    display: flex;
+    text-decoration: none;
+    color: $dark;
+    border-radius: 1px solid $dark;
+    border: 1px solid $dark;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 0rem 0rem 2rem;
+  }
+}

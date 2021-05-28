@@ -1,0 +1,110 @@
+@import "../../../styles/reponsive/responsive.scss";
+@import "../../../styles/colours.scss";
+
+.HeaderNavbar {
+  display: flex;
+  flex-flow: column-reverse;
+  bottom: 1rem;
+  right: 0.5rem;
+  position: fixed;
+  z-index: 4;
+  &__link {
+    text-decoration: none;
+    color: #282c34;
+    margin-top: 1rem;
+  }
+
+  &__dark--button {
+    align-self: flex-start;
+  }
+
+  &__menu--button {
+    position: absolute;
+    right: 0.5rem;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    background-color: $darkTransparent;
+    color: $light;
+    border-radius: 100%;
+    padding: 0px;
+    &--image {
+      height: 3rem;
+
+      display: block;
+    }
+  }
+}
+
+@include mobile-m {
+  .HeaderNavbar {
+    display: none;
+  }
+}
+
+@include mobile-s {
+  .HeaderNavbar {
+    display: none;
+  }
+}
+
+@include tablet {
+  .HeaderNavbar {
+    display: none;
+  }
+}
+
+@include desktop {
+  .HeaderNavbar {
+    &__menu--button--Dark {
+      position: unset;
+      background: none;
+      border: none;
+      color: $light;
+      padding: 0px;
+    }
+    &__menu--button--Light {
+      position: unset;
+      background: none;
+      border: none;
+      filter: invert(1);
+      color: $light;
+      padding: 0px;
+    }
+  }
+}
+
+@include large {
+  .HeaderNavbar {
+    display: contents;
+    &__menu--button--Dark {
+      position: unset;
+      background: none;
+      border: none;
+      color: $light;
+      padding: 0px;
+      border-radius: 15%;
+      margin-top: 0.5rem;
+
+      &--image {
+        height: 5rem;
+        display: block;
+      }
+    }
+    &__menu--button--Light {
+      position: unset;
+      background: none;
+      border: none;
+      color: $dark;
+      padding: 0px;
+      border-radius: 15%;
+      margin-top: 0.5rem;
+      filter: invert(1);
+
+      &--image {
+        height: 5rem;
+        display: block;
+      }
+    }
+  }
+}

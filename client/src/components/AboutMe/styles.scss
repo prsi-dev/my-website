@@ -1,0 +1,108 @@
+@import "../../styles/colours.scss";
+@import "../../styles/reponsive/responsive.scss";
+@import "../../styles/animations/animations.scss";
+
+.About {
+  &__section {
+    height: 100%;
+    &--container {
+      animation: fade 1.5s ease;
+      overflow: scroll;
+      height: 80vh;
+      margin-top: 3rem;
+      background-color: $darkTransparent;
+      border-radius: 1rem;
+    }
+    &--profile {
+      margin: 5%;
+    }
+    &--title {
+      margin: 1rem;
+      color: $white;
+    }
+    &--description {
+      padding: 2rem;
+      height: 40vh;
+      overflow-x: overlay;
+      margin: 0;
+      color: $white;
+    }
+    &--descriptionBanner {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  &__profileImg {
+    width: 40%;
+    border-radius: 1rem;
+  }
+}
+
+@include tablet {
+  .About {
+    &__section {
+      width: 25rem;
+      &--title {
+        font-size: x-large;
+        padding: unset;
+      }
+      &--profile {
+        width: 15rem;
+        margin: 0;
+      }
+      &--container {
+        display: flex;
+        height: 80vh;
+        margin-top: 6rem;
+        padding: 2rem;
+        background-color: $darkTransparent;
+        border-radius: 10px;
+      }
+      &--description {
+        height: 40%;
+      }
+      &--descriptionBanner {
+        margin-top: 5%;
+      }
+    }
+    &__profileImg {
+      width: 75%;
+    }
+  }
+}
+
+@include desktop {
+  .About {
+    &__section {
+      width: 50rem;
+      &--title {
+        font-size: x-large;
+        margin-top: 1rem;
+      }
+      &--profile {
+        width: 35%;
+        margin-top: 2rem;
+      }
+      &--container {
+        display: flex;
+        margin-top: 10rem;
+        background-color: $darkTransparent;
+        border-radius: 1rem;
+        width: 75%;
+        height: 75vh;
+        overflow: unset;
+      }
+      &--description {
+        font-size: small;
+      }
+      &--descriptionBanner {
+        width: 50vh;
+        margin-top: 5%;
+      }
+    }
+    &__profileImg {
+      width: 50%;
+    }
+  }
+}

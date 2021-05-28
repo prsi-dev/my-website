@@ -1,0 +1,117 @@
+@import "../styles/reponsive/responsive.scss";
+@import "../styles/colours.scss";
+
+.Contact {
+  width: -moz-fit-content;
+  background-image: url(https://res.cloudinary.com/dz3vpgd0m/image/upload/v1620050115/portfolio/assets/20210425205621_IMG_5339_cdu7ix.jpg);
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__Dark {
+    height: 100vh;
+    width: -moz-fit-content;
+    background-image: url(https://res.cloudinary.com/dz3vpgd0m/image/upload/v1620050115/portfolio/assets/20210425205621_IMG_5339_cdu7ix.jpg);
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    > h2 {
+      left: 1rem;
+      position: absolute;
+      top: 0rem;
+    }
+  }
+  &__Light {
+    height: 100vh;
+    width: -moz-fit-content;
+    background-image: url(https://res.cloudinary.com/dz3vpgd0m/image/upload/v1621437212/portfolio/assets/IMG_5827_e7q9k8.jpg);
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    > h2 {
+      left: 1rem;
+      position: absolute;
+      top: 0rem;
+    }
+  }
+  &__section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include tablet {
+  .Contact {
+    > h2 {
+      position: fixed;
+      top: 2rem;
+      margin-left: 1rem;
+      margin: 0;
+      padding: 1.2rem;
+    }
+    &__section {
+      justify-content: space-around;
+    }
+  }
+}
+@include desktop {
+  .Contact {
+    &__Dark {
+      > h2 {
+        position: fixed;
+        top: 2rem;
+        margin-left: 1rem;
+        margin: 0;
+        padding: 1.2rem;
+      }
+    }
+    &__Light {
+      > h2 {
+        position: fixed;
+        top: 2rem;
+        margin-left: 1rem;
+        margin: 0;
+        padding: 1.2rem;
+      }
+    }
+    &__section {
+      align-items: flex-start;
+      > form {
+        margin-top: 5%;
+      }
+    }
+  }
+}
+@include large {
+  .Contact {
+    &__Dark {
+      > h2 {
+        position: fixed;
+        top: 2rem;
+        margin-left: 1rem;
+        margin: 0;
+        padding: 1.2rem;
+      }
+    }
+    &__Light {
+      > h2 {
+        position: fixed;
+        top: 2rem;
+        margin-left: 1rem;
+        margin: 0;
+        padding: 1.2rem;
+      }
+    }
+    &__section {
+      display: flex;
+      justify-content: space-around;
+      > form {
+        margin-top: 5%;
+      }
+    }
+  }
+}

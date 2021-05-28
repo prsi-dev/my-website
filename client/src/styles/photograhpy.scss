@@ -1,0 +1,58 @@
+@import "../styles/colours.scss";
+@import "../styles/reponsive/responsive.scss";
+
+.Photography {
+  height: 95%;
+  margin-top: 6rem;
+  > h2 {
+    left: 1rem;
+    position: absolute;
+    top: 0rem;
+  }
+  &__section {
+    height: 100%;
+
+    >h4 {
+      padding: 1rem;
+      height: 3rem;
+      margin: 0;
+    }
+  }
+  &___onLoad {
+    height: 600px;
+    > p {
+      height: 100vh;
+      margin-top: 10rem;
+    }
+  }
+}
+
+@include desktop{
+  .Photography{
+    > h2 {
+      left: 1rem;
+      position: fixed;
+      top: 0rem;
+    }
+
+  }
+}
+@include large{
+  .Photography{
+    > h2 {
+      left: 1rem;
+      position: fixed;
+      top: 0rem;
+    }
+
+  }
+}
+
+
+.OnLoad {
+  height: 100vh;
+}
+
+.Theme > main.Photography {
+  background-color: $dark;
+}

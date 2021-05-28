@@ -1,0 +1,41 @@
+@keyframes fade {
+  from {
+    opacity: 10%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    right: 400px;
+    position: absolute;
+  }
+}
+@keyframes moveLeft {
+    from {
+      left: 3rem;
+      position: relative;
+    }
+    to{
+        left: 0;
+    }
+  }
+@keyframes moveBottom {
+    from {
+      top: 200px;
+    }
+    to{
+        position: inherit;
+    }
+  }
+
+@keyframes LinkBox {
+    from {
+      opacity: 10%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }

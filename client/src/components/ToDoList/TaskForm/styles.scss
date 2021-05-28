@@ -1,0 +1,37 @@
+@import "../../../styles/reponsive/responsive.scss";
+
+.TaskForm {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 5rem;
+
+  > textarea {
+    width: 40vh;
+    height: 5rem;
+  }
+  > label {
+    margin-bottom: 1%;
+  }
+  > button {
+    border-radius: 5px;
+    background: #f5f5f5;
+    margin: 2rem;
+    width: 7rem;
+    align-self: center;
+  }
+}
+@include tablet {
+  .TaskForm {
+    > input {
+      width: 20rem;
+      height: 3rem;
+      align-self: center;
+      text-align-last: center;
+    }
+    > textarea {
+      align-self: center;
+      text-align-last: center;
+    }
+  }
+}

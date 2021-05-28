@@ -1,0 +1,83 @@
+@import "../../styles/colours.scss";
+@import "../../styles/reponsive/responsive.scss";
+
+.Wrap {
+  display: flex;
+  justify-content: center;
+
+  &__window {
+    border: 2px solid $darkTransparent;
+    padding: 20px;
+    max-width: 75vw;
+    min-width: 10rem;
+    resize: both;
+    overflow: auto;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 6rem;
+  }
+}
+.Box {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item {
+    background: $darkTransparent;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+  }
+  &__item:nth-child(even) {
+    background: $lightTransparent;
+  }
+}
+
+@include mobile-s {
+  .Box {
+    &__item {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+@include mobile-m {
+  .Box {
+    &__item {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@include tablet {
+  .Box {
+    &__item {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+@include desktop {
+  .Wrap {
+    &__window {
+      width: 50vh;
+    }
+  }
+  .Box {
+    &__item {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

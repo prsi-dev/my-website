@@ -1,0 +1,76 @@
+.TicTacBoard {
+  margin: 5%;
+
+  &__board {
+    margin: 5px auto 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  &__row {
+    display: flex;
+  }
+  &__turn {
+    color: #fd8a28;
+    margin: 1rem;
+  }
+  &__cell--btn {
+    cursor: pointer;
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid #dadada;
+    margin: 2%;
+    border-radius: 5px;
+    color: turquoise;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  &__re-start-btn {
+    margin-top: 20px;
+  }
+
+  > h3 {
+    line-height: 1.5rem;
+  }
+  &__btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #fd8a28;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: none;
+    margin: 1rem;
+  }
+  &__btn--off {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: white;
+    color: #fd8a28;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: none;
+    margin: 1rem;
+  }
+  &__message--off {
+    display: none;
+  }
+  &__message--on {
+    color: gold;
+  }
+}
+
+.X-turn {
+  color: #fd8a28;
+}

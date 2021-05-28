@@ -1,0 +1,144 @@
+@import "../styles/colours.scss";
+@import "./colours.scss";
+@import "../styles/reponsive/responsive.scss";
+
+@import "../styles/animations/animations.scss";
+
+.Home {
+  &__Dark {
+    height: 100vh;
+    width: -moz-fit-content;
+    background-image: url(https://res.cloudinary.com/dz3vpgd0m/image/upload/v1620050115/portfolio/assets/20210425205621_IMG_5339_cdu7ix.jpg);
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__Light {
+    height: 100vh;
+    width: -moz-fit-content;
+    background-image: url(https://res.cloudinary.com/dz3vpgd0m/image/upload/v1621437212/portfolio/assets/IMG_5827_e7q9k8.jpg);
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    > h1 {
+      background-color: $almond;
+      color: $dark;
+      border-radius: 1rem;
+    }
+  }
+
+  &__title {
+    animation: fade 2s;
+
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin-inline: 15vh;
+  }
+
+  &__aboutMe {
+    display: flex;
+    &--menu {
+      display: flex;
+      align-content: center;
+      margin-left: 1rem;
+
+      &--item--Dark {
+        animation: fade 2s;
+        position: absolute;
+        list-style: none;
+        border: 1px solid $light;
+        border-radius: 10px;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 0.7rem;
+
+        >p{
+          color: $light;
+        }
+      }
+      &--item--Light {
+        animation: fade 2s;
+        position: absolute;
+        list-style: none;
+        border: 1px solid $dark;
+        border-radius: 10px;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 0.7rem;
+        >p{
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .Home {
+    &__title {
+      margin-top: 85vh;
+      align-self: unset;
+      position: unset;
+      margin-inline: 30%;
+    }
+
+    &__aboutMe {
+      &--menu {
+        margin: 2rem;
+      }
+
+      &--menu--item--Dark {
+        height: 4rem;
+        width: 6rem;
+      }
+      &--menu--item--Light {
+        height: 4rem;
+        width: 6rem;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .Home {
+    &__title {
+      margin-top: 85vh;
+      align-self: unset;
+      position: unset;
+      font-size: -webkit-xxx-large;
+    }
+
+    &__aboutMe {
+      &--menu {
+        display: flex;
+      }
+      &--menu--list {
+        display: flex;
+      }
+      &--menu--item--Dark {
+        height: 8rem;
+        width: 10rem;
+        margin-left: 5rem;
+
+        > p {
+          font-size: xx-large;
+        }
+      }
+      &--menu--item--Light {
+        height: 8rem;
+        width: 10rem;
+        margin-left: 5rem;
+        > p {
+          font-size: xx-large;
+        }
+      }
+    }
+  }
+}

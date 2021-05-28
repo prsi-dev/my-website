@@ -1,0 +1,8 @@
+@import "../../styles/animations/animations.scss";
+
+.LinkBox {
+  &__dark-button {
+    animation: fade 2s;
+    align-self: flex-start;
+  }
+}
