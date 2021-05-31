@@ -10,6 +10,7 @@ const indexRouter = require('./routes/index.routes');
 const aboutMeRouter = require('./routes/aboutMe.routes');
 const photographyRouter = require('./routes/photography.routes');
 const socialInfoRouter = require('./routes/socialInfo.routes');
+const { sendUserRequest } = require('./config/nodemailer');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/data/aboutMe', aboutMeRouter);
 app.use('/data/photography', photographyRouter);
 app.use('/data/socialInfo', socialInfoRouter);
+app.use('/user-request', sendUserRequest)
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
