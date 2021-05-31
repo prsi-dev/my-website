@@ -20,18 +20,16 @@ function Home({ theme }) {
             onClick={() => setisvisible(!isvisible)}
           >
             <h5 className={`Home__aboutMe--menu--item--${theme}`}>
-              {!isvisible ? <p>About Me</p> : <p>X</p>}
+              <p>About Me</p>
             </h5>
           </span>
 
-          {isvisible && (
-            <AboutMe
-              className="About"
-              profile={profile}
-              isvisible={isvisible}
-              setisvisible={setisvisible}
-            />
-          )}
+          <AboutMe
+            className="About"
+            profile={profile}
+            isvisible={isvisible}
+            setisvisible={setisvisible}
+          />
         </div>
       ) : (
         <br></br>

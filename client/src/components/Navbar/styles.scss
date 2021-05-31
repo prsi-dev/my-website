@@ -46,9 +46,9 @@
 @include mobile-m {
   .Navbar {
     &__menu--button {
-      height: 4rem;
+      height: 5rem;
       &--image {
-        height: 4rem;
+        height: 5rem;
       }
     }
   }
@@ -57,9 +57,9 @@
 @include mobile-s {
   .Navbar {
     &__menu--button {
-      height: 3rem;
+      height: 5rem;
       &--image {
-        height: 3rem;
+        height: 5rem;
       }
     }
   }
