@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { API_PHOTOGRAPHY } from "../constants/endpoints";
 
 function usePhotography() {
   const [photography, setPhotography] = useState();

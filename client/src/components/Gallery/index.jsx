@@ -4,7 +4,6 @@ import GalleryHeader from "../GalleryHeader";
 import "./styles.scss";
 
 function Gallery({ gallery, theme }) {
-  console.log("galleryyHeader", gallery);
   return (
     <div className="Gallery">
       <Link className={`Gallery__btn--close--${theme}`} to="/photography">

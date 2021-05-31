@@ -12,7 +12,6 @@ function RockPaperScissors() {
 
   possibleChoices.forEach((possibleChoice) =>
     possibleChoice.addEventListener("click", (e) => {
-      console.log("Rock-Paper-Scissors");
       userChoice = e.target.id;
       userChoiceDisplay.innerHTML = userChoice;
       generateComputerChoice();

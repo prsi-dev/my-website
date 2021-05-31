@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 
 import "./styles.scss";
-import { API_USER_REQUEST_EMAIL } from "../../constants/endpoints";
 
 const RegisterForm = () => {
   const {
@@ -11,10 +10,8 @@ const RegisterForm = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log("fromulario rellenado", data);
-
     await fetch(
-      API_USER_REQUEST_EMAIL,
+      "/user-request",
       {
         headers: { "Content-Type": "application/json; charset=utf-8" },
         method: "POST",
