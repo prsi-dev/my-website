@@ -6,10 +6,11 @@
   &__section {
     height: 100%;
     &--container {
-      /* animation: fade 1.5s ease; */
+      animation: fade 1.5s ease;
       overflow: scroll;
       height: 80vh;
       margin-top: 3rem;
+      margin-inline: 1rem;
       background-color: $darkTransparent;
       border-radius: 1rem;
     }
