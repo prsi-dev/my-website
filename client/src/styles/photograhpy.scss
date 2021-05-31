@@ -27,6 +27,14 @@
   }
 }
 
+@include mobile-s{
+  .Photography{
+    > h2{
+      font-size: larger;
+    }
+  }
+}
+
 @include desktop{
   .Photography{
     > h2 {
