@@ -10,8 +10,9 @@ const RegisterForm = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
+    const newEmail = "/user-request";
     await fetch(
-      "/user-request",
+      (newEmail),
       {
         headers: { "Content-Type": "application/json; charset=utf-8" },
         method: "POST",
