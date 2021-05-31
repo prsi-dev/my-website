@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import { API_ABOUT_URL } from "../constants/endpoints";
-
 function useAboutMe() {
   const [profile, setProfile] = useState();
 
