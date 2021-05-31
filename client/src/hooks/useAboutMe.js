@@ -7,7 +7,7 @@ function useAboutMe() {
 
   const GetAboutMe = async () => {
     try {
-      const response = await fetch(API_ABOUT_URL);
+      const response = await fetch("/data/AboutMe");
       const jsonData = await response.json();
       setProfile(jsonData);
     } catch (error) {

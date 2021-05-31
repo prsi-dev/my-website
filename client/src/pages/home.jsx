@@ -20,7 +20,7 @@ function Home({ theme }) {
             onClick={() => setisvisible(!isvisible)}
           >
             <h5 className={`Home__aboutMe--menu--item--${theme}`}>
-              <p>About Me</p>
+              {!isvisible ? <p>About Me</p> : <p>X</p>}
             </h5>
           </span>
 
