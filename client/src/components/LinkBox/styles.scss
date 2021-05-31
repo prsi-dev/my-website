@@ -42,6 +42,19 @@
   }
 }
 
+@include mobile-s{
+.LinkBox{
+  &__Dark{
+    width: 60vw;
+    height: 35vh;
+  }
+  &__Light{
+    width: 60vw;
+    height: 35vh;
+  }
+}
+}
+
 @include tablet {
   .LinkBox {
     font-size: x-large;

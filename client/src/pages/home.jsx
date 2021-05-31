@@ -24,12 +24,14 @@ function Home({ theme }) {
             </h5>
           </span>
 
-          <AboutMe
-            className="About"
-            profile={profile}
-            isvisible={isvisible}
-            setisvisible={setisvisible}
-          />
+          {isvisible && (
+            <AboutMe
+              className="About"
+              profile={profile}
+              isvisible={isvisible}
+              setisvisible={setisvisible}
+            />
+          )}
         </div>
       ) : (
         <br></br>
